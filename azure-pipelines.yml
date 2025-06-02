@@ -11,10 +11,8 @@ pool:
 
 steps:
 - script: echo azure pipeline for maven project
-  displayName: 'run a one-line script'
-    
+  displayName: 'run a one-line script' 
 - script: mvn clean intsall 
   displayName: 'build with maven'
-
 - script: java -jar target/maventest-1.0-SNAPSHOT.jar
   displayName: 'running jar'
